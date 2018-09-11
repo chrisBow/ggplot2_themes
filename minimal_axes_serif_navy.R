@@ -1,4 +1,4 @@
-theme_minimal_serif_navy <- function (base_size = 12, base_family = "serif", ticks = TRUE) 
+theme_minimal_axes_serif_navy <- function (base_size = 12, base_family = "serif", ticks = TRUE) 
 {
   ret <- theme_bw(base_family = base_family, base_size = base_size) + 
     theme(legend.background = element_blank(), legend.key = element_blank(), 
@@ -6,7 +6,8 @@ theme_minimal_serif_navy <- function (base_size = 12, base_family = "serif", tic
           strip.background = element_blank(), 
           panel.background = element_rect(fill = "#ffffff", colour = NA),
           plot.background = element_rect(fill = "#FFFFFF"),
-          axis.line = element_blank(), panel.grid = element_blank(),
+          axis.line = element_line(colour = "#222C3F"), 
+          panel.grid = element_blank(),
           axis.text.x = element_text(colour="#222C3F"),
           axis.title.x = element_text(colour = "#222C3F"),
           axis.title.y = element_text(colour="#222C3F"),

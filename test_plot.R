@@ -8,4 +8,4 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width,
        x = "Sepal length",
        y = "Sepal width",
        caption = "Data from 'Iris' dataset") +
-  theme_minimal_serif_navy()
+  theme_panel_parchment()
